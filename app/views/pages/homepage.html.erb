@@ -1,0 +1,10 @@
+<h1>Pages#homepage</h1>
+<p>Find me in app/views/pages/homepage.html.erb</p>
+
+<% if current_user %>
+  Welcome <%= current_user.name %>!
+  <%= link_to "Fetch Friends Lists", "/fetch_friends_lists" %>
+  <%= link_to "Sign Out", signout_path %>
+<% else %>
+  <%= link_to "Sign in with Facebook", "/auth/facebook" %>
+<% end %>

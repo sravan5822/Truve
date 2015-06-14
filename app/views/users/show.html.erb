@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fb oauth token:</strong>
+  <%= @user.fb_oauth_token %>
+</p>
+
+<p>
+  <strong>Fb refresh token:</strong>
+  <%= @user.fb_refresh_token %>
+</p>
+
+<p>
+  <strong>Fb user:</strong>
+  <%= @user.fb_user_id %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @user.gender %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @user.birthday %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @user.time %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @user.city %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @user.country %>
+</p>
+
+<p>
+  <strong>Avatar url:</strong>
+  <%= @user.avatar_url %>
+</p>
+
+<p>
+  <strong>Meta:</strong>
+  <%= @user.meta %>
+</p>
+
+<p>
+  <strong>Recieve emails:</strong>
+  <%= @user.recieve_emails %>
+</p>
+
+<p>
+  <strong>Share with friends of friends:</strong>
+  <%= @user.share_with_friends_of_friends %>
+</p>
+
+<p>
+  <strong>Friends of friends hash:</strong>
+  <%= @user.friends_of_friends_hash %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

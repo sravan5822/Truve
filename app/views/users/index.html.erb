@@ -1,0 +1,51 @@
+<h1>Listing users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fb oauth token</th>
+      <th>Fb refresh token</th>
+      <th>Fb user</th>
+      <th>Email</th>
+      <th>Gender</th>
+      <th>Birthday</th>
+      <th>Time</th>
+      <th>City</th>
+      <th>Country</th>
+      <th>Avatar url</th>
+      <th>Meta</th>
+      <th>Recieve emails</th>
+      <th>Share with friends of friends</th>
+      <th>Friends of friends hash</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.fb_oauth_token %></td>
+        <td><%= user.fb_refresh_token %></td>
+        <td><%= user.fb_user_id %></td>
+        <td><%= user.email %></td>
+        <td><%= user.gender %></td>
+        <td><%= user.birthday %></td>
+        <td><%= user.time %></td>
+        <td><%= user.city %></td>
+        <td><%= user.country %></td>
+        <td><%= user.avatar_url %></td>
+        <td><%= user.meta %></td>
+        <td><%= user.recieve_emails %></td>
+        <td><%= user.share_with_friends_of_friends %></td>
+        <td><%= user.friends_of_friends_hash %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>

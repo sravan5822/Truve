@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fb_oauth_token: MyString
+  fb_refresh_token: MyString
+  fb_user_id: MyString
+  email: MyString
+  gender: MyString
+  birthday: 2014-03-15
+  time: MyString
+  city: MyString
+  country: MyString
+  avatar_url: MyText
+  meta: MyText
+  recieve_emails: false
+  share_with_friends_of_friends: false
+  friends_of_friends_hash: MyText
+
+two:
+  fb_oauth_token: MyString
+  fb_refresh_token: MyString
+  fb_user_id: MyString
+  email: MyString
+  gender: MyString
+  birthday: 2014-03-15
+  time: MyString
+  city: MyString
+  country: MyString
+  avatar_url: MyText
+  meta: MyText
+  recieve_emails: false
+  share_with_friends_of_friends: false
+  friends_of_friends_hash: MyText
